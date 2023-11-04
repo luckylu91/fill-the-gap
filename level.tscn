@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dv6nmcs6mkvtv"]
+[gd_scene load_steps=6 format=3 uid="uid://dv6nmcs6mkvtv"]
 
 [ext_resource type="PackedScene" uid="uid://yvsll7cf8s78" path="res://long_obstacle.tscn" id="1_roqkv"]
 [ext_resource type="PackedScene" uid="uid://dy772tf3s7epd" path="res://player.tscn" id="2_jyivx"]
 [ext_resource type="PackedScene" uid="uid://dbinwdxidi6ef" path="res://altar.tscn" id="3_r1oup"]
 [ext_resource type="PackedScene" uid="uid://0ymyhlehjk5g" path="res://gold.tscn" id="4_ejru4"]
+[ext_resource type="TileSet" uid="uid://d042gojf0guk6" path="res://full_tile_set.tres" id="5_cc3y5"]
 
 [node name="Level" type="Node2D"]
 
@@ -132,9 +133,14 @@ position = Vector2(402, 608)
 rotation = -0.261799
 
 [node name="Gold2" parent="." instance=ExtResource("4_ejru4")]
-position = Vector2(407, 580)
+position = Vector2(558, 579)
 rotation = -0.0774246
 
 [node name="Gold3" parent="." instance=ExtResource("4_ejru4")]
 position = Vector2(372, 594)
 rotation = 0.969773
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(-1, 0)
+tile_set = ExtResource("5_cc3y5")
+format = 2
