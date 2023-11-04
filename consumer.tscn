@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://u28dvli0w3tf"]
+
+[ext_resource type="Script" path="res://consumer.gd" id="1_54h1e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lib84"]
+
+[node name="Consumer" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_54h1e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_lib84")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

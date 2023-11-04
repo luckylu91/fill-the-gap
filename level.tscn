@@ -1,0 +1,140 @@
+[gd_scene load_steps=5 format=3 uid="uid://dv6nmcs6mkvtv"]
+
+[ext_resource type="PackedScene" uid="uid://yvsll7cf8s78" path="res://long_obstacle.tscn" id="1_roqkv"]
+[ext_resource type="PackedScene" uid="uid://dy772tf3s7epd" path="res://player.tscn" id="2_jyivx"]
+[ext_resource type="PackedScene" uid="uid://dbinwdxidi6ef" path="res://altar.tscn" id="3_r1oup"]
+[ext_resource type="PackedScene" uid="uid://0ymyhlehjk5g" path="res://gold.tscn" id="4_ejru4"]
+
+[node name="Level" type="Node2D"]
+
+[node name="Obstacles" type="Node2D" parent="."]
+
+[node name="Floor" type="Node2D" parent="Obstacles"]
+metadata/_edit_group_ = true
+
+[node name="LongObstacle" parent="Obstacles/Floor" instance=ExtResource("1_roqkv")]
+position = Vector2(40, 639)
+
+[node name="LongObstacle2" parent="Obstacles/Floor" instance=ExtResource("1_roqkv")]
+position = Vector2(120, 639)
+
+[node name="LongObstacle3" parent="Obstacles/Floor" instance=ExtResource("1_roqkv")]
+position = Vector2(200, 639)
+
+[node name="LongObstacle4" parent="Obstacles/Floor" instance=ExtResource("1_roqkv")]
+position = Vector2(280, 639)
+
+[node name="LongObstacle5" parent="Obstacles/Floor" instance=ExtResource("1_roqkv")]
+position = Vector2(360, 639)
+
+[node name="LongObstacle6" parent="Obstacles/Floor" instance=ExtResource("1_roqkv")]
+position = Vector2(440, 639)
+
+[node name="LongObstacle7" parent="Obstacles/Floor" instance=ExtResource("1_roqkv")]
+position = Vector2(520, 639)
+
+[node name="LongObstacle8" parent="Obstacles/Floor" instance=ExtResource("1_roqkv")]
+position = Vector2(600, 639)
+
+[node name="LongObstacle9" parent="Obstacles/Floor" instance=ExtResource("1_roqkv")]
+position = Vector2(680, 639)
+
+[node name="LongObstacle10" parent="Obstacles/Floor" instance=ExtResource("1_roqkv")]
+position = Vector2(760, 639)
+
+[node name="LongObstacle11" parent="Obstacles/Floor" instance=ExtResource("1_roqkv")]
+position = Vector2(840, 639)
+
+[node name="LongObstacle12" parent="Obstacles/Floor" instance=ExtResource("1_roqkv")]
+position = Vector2(920, 639)
+
+[node name="LongObstacle13" parent="Obstacles/Floor" instance=ExtResource("1_roqkv")]
+position = Vector2(1000, 639)
+
+[node name="LongObstacle14" parent="Obstacles/Floor" instance=ExtResource("1_roqkv")]
+position = Vector2(1080, 639)
+
+[node name="LongObstacle15" parent="Obstacles/Floor" instance=ExtResource("1_roqkv")]
+position = Vector2(1160, 639)
+
+[node name="WallLeft" type="Node2D" parent="Obstacles"]
+position = Vector2(4, 287)
+rotation = 1.5708
+metadata/_edit_group_ = true
+
+[node name="LongObstacle" parent="Obstacles/WallLeft" instance=ExtResource("1_roqkv")]
+position = Vector2(-322, -3.00005)
+
+[node name="LongObstacle2" parent="Obstacles/WallLeft" instance=ExtResource("1_roqkv")]
+position = Vector2(-242, -3.00005)
+
+[node name="LongObstacle3" parent="Obstacles/WallLeft" instance=ExtResource("1_roqkv")]
+position = Vector2(-162, -3.00005)
+
+[node name="LongObstacle4" parent="Obstacles/WallLeft" instance=ExtResource("1_roqkv")]
+position = Vector2(-82, -3.00005)
+
+[node name="LongObstacle5" parent="Obstacles/WallLeft" instance=ExtResource("1_roqkv")]
+position = Vector2(-2, -3.00005)
+
+[node name="LongObstacle6" parent="Obstacles/WallLeft" instance=ExtResource("1_roqkv")]
+position = Vector2(78, -3.00005)
+
+[node name="LongObstacle7" parent="Obstacles/WallLeft" instance=ExtResource("1_roqkv")]
+position = Vector2(158, -3.00005)
+
+[node name="LongObstacle8" parent="Obstacles/WallLeft" instance=ExtResource("1_roqkv")]
+position = Vector2(238, -3.00005)
+
+[node name="LongObstacle9" parent="Obstacles/WallLeft" instance=ExtResource("1_roqkv")]
+position = Vector2(318, -3.00005)
+
+[node name="WallRight" type="Node2D" parent="Obstacles"]
+position = Vector2(1139, 298)
+rotation = -4.71239
+metadata/_edit_group_ = true
+
+[node name="LongObstacle" parent="Obstacles/WallRight" instance=ExtResource("1_roqkv")]
+position = Vector2(-322, -3.00005)
+
+[node name="LongObstacle2" parent="Obstacles/WallRight" instance=ExtResource("1_roqkv")]
+position = Vector2(-242, -3.00005)
+
+[node name="LongObstacle3" parent="Obstacles/WallRight" instance=ExtResource("1_roqkv")]
+position = Vector2(-162, -3.00005)
+
+[node name="LongObstacle4" parent="Obstacles/WallRight" instance=ExtResource("1_roqkv")]
+position = Vector2(-82, -3.00005)
+
+[node name="LongObstacle5" parent="Obstacles/WallRight" instance=ExtResource("1_roqkv")]
+position = Vector2(-2, -3.00005)
+
+[node name="LongObstacle6" parent="Obstacles/WallRight" instance=ExtResource("1_roqkv")]
+position = Vector2(78, -3.00005)
+
+[node name="LongObstacle7" parent="Obstacles/WallRight" instance=ExtResource("1_roqkv")]
+position = Vector2(158, -3.00005)
+
+[node name="LongObstacle8" parent="Obstacles/WallRight" instance=ExtResource("1_roqkv")]
+position = Vector2(238, -3.00005)
+
+[node name="LongObstacle9" parent="Obstacles/WallRight" instance=ExtResource("1_roqkv")]
+position = Vector2(318, -3.00005)
+
+[node name="Player" parent="." instance=ExtResource("2_jyivx")]
+position = Vector2(631, 592)
+
+[node name="Altar" parent="." instance=ExtResource("3_r1oup")]
+position = Vector2(559, 629)
+
+[node name="Gold" parent="." instance=ExtResource("4_ejru4")]
+position = Vector2(402, 608)
+rotation = -0.261799
+
+[node name="Gold2" parent="." instance=ExtResource("4_ejru4")]
+position = Vector2(407, 580)
+rotation = -0.0774246
+
+[node name="Gold3" parent="." instance=ExtResource("4_ejru4")]
+position = Vector2(372, 594)
+rotation = 0.969773

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://yvsll7cf8s78"]
+
+[ext_resource type="Texture2D" uid="uid://suan3mj0uulp" path="res://long_obstacle.png" id="1_i4m65"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qicbs"]
+size = Vector2(80, 20)
+
+[node name="LongObstacle" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_qicbs")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-4.76837e-07, 4.76837e-07)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("1_i4m65")
